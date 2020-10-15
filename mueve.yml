@@ -1,0 +1,9 @@
+---
+- hosts: nodo3
+  become: yes
+  tasks:
+  - name: Copia archivo
+    copy:
+    src: /home/ansible/joham.txt
+    dest: joham.txt
+    owner: ansible  
